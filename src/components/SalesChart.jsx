@@ -28,8 +28,7 @@ const SalesChart = ({ sales }) => {
     <div className="grid items-center justify-center xl:flex gap-20">
       <div>
         <h3 className="text-xl font-semibold mb-4 xl:ml-0 ml-20">Daily Sales Trend</h3>
-       
-        <LineChart width={500} height={300} data={lineData}>
+        <LineChart width={400} height={300} data={lineData}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
           <YAxis />
@@ -41,7 +40,7 @@ const SalesChart = ({ sales }) => {
       </div>
       <div>
         <h3 className="text-xl font-semibold mb-4 xl:ml-0 ml-20">Sales by Product</h3>
-        <BarChart width={500} height={300} data={barData}>
+        <BarChart width={400} height={300} data={barData}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="product" />
           <YAxis />
