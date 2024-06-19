@@ -27,7 +27,8 @@ const SalesChart = ({ sales }) => {
   return (
     <div className="grid items-center justify-center xl:flex gap-20">
       <div>
-        <h3 className="text-xl font-semibold mb-4">Daily Sales Trend</h3>
+        <h3 className="text-xl font-semibold mb-4 xl:ml-0 ml-20">Daily Sales Trend</h3>
+       
         <LineChart width={500} height={300} data={lineData}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
@@ -36,9 +37,10 @@ const SalesChart = ({ sales }) => {
           <Legend />
           <Line type="monotone" dataKey="sales" stroke="#8884d8" />
         </LineChart>
+
       </div>
       <div>
-        <h3 className="text-xl font-semibold mb-4">Sales by Product</h3>
+        <h3 className="text-xl font-semibold mb-4 xl:ml-0 ml-20">Sales by Product</h3>
         <BarChart width={500} height={300} data={barData}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="product" />
